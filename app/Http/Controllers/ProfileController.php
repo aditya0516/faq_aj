@@ -106,7 +106,7 @@ class ProfileController extends Controller
 
         ]);
         $profile = Profile::find($profile);
-        $profile->fname = $request->fname;
+        $profile->fname = $request->lname;
         $profile->lname = $request->lname;
         $profile->body = $request->body;
         $profile->save();
